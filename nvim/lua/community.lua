@@ -10,5 +10,4 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.search.nvim-spectre" },
-  { import = "astrocommunity.editing-support.multicursors-nvim" },
 }

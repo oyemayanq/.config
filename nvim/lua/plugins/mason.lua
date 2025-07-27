@@ -1,7 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- Customize Mason
-
 ---@type LazySpec
 return {
   -- use mason-tool-installer for automatically installing Mason packages
@@ -16,12 +12,13 @@ return {
 
         -- install formatters
         "stylua",
-
-        -- install debuggers
-        "debugpy",
+        "biome",
 
         -- install any other package
         "tree-sitter-cli",
+
+        "typescript-language-server",
+        "tailwindcss-language-server",
       },
     },
   },

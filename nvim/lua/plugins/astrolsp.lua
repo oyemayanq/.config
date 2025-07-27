@@ -25,7 +25,7 @@ return {
           "typescript",
           "javascript",
           "yaml",
-          "json"
+          "json",
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
@@ -42,14 +42,13 @@ return {
       -- end
     },
     -- enable servers that you already have installed without mason
-    servers = {
-    },
+    servers = {},
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
       gopls = {
-          analyses = {
+        analyses = {
           unusedparams = true,
         },
         staticcheck = true,
